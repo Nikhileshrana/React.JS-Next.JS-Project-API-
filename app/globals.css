@@ -70,14 +70,14 @@ footer
 {
     font-size: xx-large;
     font-weight: 600;
-    color: #ffffff;
-    background: linear-gradient(180deg, #000000, #8e75ff, #5346c6);
+    background: linear-gradient(to right, #f32170, #ff6b08,#cf23cf, #eedd44);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
     border-radius: 10px;
     animation-name: move;
     animation-duration: 3s;
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
-    padding: 0.7vw;
 }
 
 @keyframes move
