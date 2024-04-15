@@ -5,15 +5,21 @@
     margin: 0px;
 }
 
+body
+{
+    height: 100vh;
+}
+
 #header-container
 {
-    background-color: #000;
-    color: #fff;
+    background-color: #000000;
+    color: #ffffff;
     padding: 10px;
     text-align: center;
     width: 100%;
     display: flex;
     justify-content: space-between;
+    height: 5vh;
 }
 
 #header-container>div
@@ -29,3 +35,100 @@
     justify-content: space-around;
 }
 
+footer
+{
+    height: 3vh;
+}
+
+#container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 92vh;
+    background-image: url(https://d2pas86kykpvmq.cloudfront.net/landings/inflatable/worm.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#container>div , #container>div>div
+{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    justify-content: space-around;
+    gap: 4vw;
+}
+
+#container>div>div
+{
+    font-size:x-large ;
+}
+
+#title
+{
+    font-size: xx-large;
+    font-weight: 600;
+    color: #ffffff;
+    background: linear-gradient(180deg, #000000, #8e75ff, #5346c6);
+    border-radius: 10px;
+    animation-name: move;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    padding: 0.7vw;
+}
+
+@keyframes move
+{
+    0%
+    {
+        transform: translateY(0%);
+    }
+    50%
+    {
+        transform: translateY(-10%);
+    }
+    100%
+    {
+        transform: translateY(0%);
+    }
+}
+
+button
+{
+    background-color: #423187;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: large;
+}
+
+button:hover
+{
+    background-color: #f7f7f7;
+    color: #423187;
+    animation-name: swipe;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+}
+
+@keyframes swipe
+{
+    0%
+    {
+        transform: translateX(0%);
+    }
+    50%
+    {
+        transform: translateX(10px);
+    }
+    100%
+    {
+        transform: translateX(0%);
+    }
+}

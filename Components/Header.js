@@ -1,19 +1,20 @@
-import React from 'react'
+"use client"
+import Link from 'next/link'
+import { useState } from 'react';
 
-const Header = () => {
+const Header = (props) => {
   return (
     <>
     <div id='header-container'>
         <div>
             <div>
-                LOGO
+                {props.name}
             </div>
         </div>
         <div>
-            <div>PRODUCTS</div>
-            <div>ABOUT US</div>
-            <div>CONTACT US</div>
-            <div>LOGIN</div>
+            <Link href='#'>Home</Link>
+            <Link href='https://nikhileshrana.tech'>Portfolio</Link>
+            <Link href='https://github.com/nikhileshrana'>Github</Link>
         </div>
     </div>
     </>
