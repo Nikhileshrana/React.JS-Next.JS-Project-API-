@@ -15,9 +15,9 @@
     background-image: url(/worm.png);
     background-repeat: repeat;
     background-position: center;
-    background-size: cover;
+    background-size: 100%;
     color: rgb(255, 255, 255);
-    box-shadow: rgba(166, 46, 240, 0.4) 0px 5px, rgba(166, 46, 240, 0.3) 0px 10px, rgba(156, 46, 240, 0.2) 0px 15px, rgba(172, 46, 240, 0.1) 0px 20px, rgba(172, 46, 240, 0.05) 0px 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .header-right

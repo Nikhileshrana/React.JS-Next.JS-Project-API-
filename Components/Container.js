@@ -11,13 +11,13 @@ const Container = (props) => {
         <div>
           <div Style="font-size:3vh">{props.data}</div>
           <br></br>
-          <div><button onClick={props.mydata}>START</button></div>
+          <div><button onClick={props.mydata}>START/NEXT</button></div>
         </div>
         <br></br>
         <div>
           <div Style="font-size:3vh">{props.output}</div>
           <br></br>
-          <div><button onClick={props.showoutput}>View Why? / Refresh</button></div>
+          <div><button onClick={props.showoutput}>View Why?</button></div>
         </div>
       </div>
 

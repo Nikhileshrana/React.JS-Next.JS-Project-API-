@@ -19,6 +19,7 @@ const page = () => {
       console.log(response.data.setup);
       setData(response.data.setup);
       setPunchline(response.data.punchline);
+      setOutput([]);
     }
     catch(error)
     {console.log(error)}
