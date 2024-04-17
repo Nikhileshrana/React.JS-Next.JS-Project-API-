@@ -74,7 +74,7 @@ a , a:visited , a:active
     display: flex;
     gap: 3vh;
     margin: 0 auto;
-    padding: 5vh;
+    padding: 15vh;
     height: 90vh;
 }
 
