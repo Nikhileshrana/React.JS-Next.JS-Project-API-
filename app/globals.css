@@ -5,6 +5,41 @@
     box-sizing: border-box;
 }
 
+.Header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vh;
+    font-size: 2vh;
+    background-image: url(/worm.png);
+    background-repeat: repeat;
+    background-position: center;
+    background-size: cover;
+    color: rgb(255, 255, 255);
+    box-shadow: rgba(166, 46, 240, 0.4) 0px 5px, rgba(166, 46, 240, 0.3) 0px 10px, rgba(156, 46, 240, 0.2) 0px 15px, rgba(172, 46, 240, 0.1) 0px 20px, rgba(172, 46, 240, 0.05) 0px 25px;
+}
+
+.header-right
+{
+    text-decoration: none;
+    width: 150px;
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    background: -webkit-linear-gradient(140deg,#4529ab, #ffb339);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
+}
+
+a , a:visited , a:active
+{
+    text-decoration: none;
+    color: #fcaf83;
+    font-weight: 800;
+}
+
 .Container
 {
     width:fit-content;
@@ -40,6 +75,7 @@
     gap: 3vh;
     margin: 0 auto;
     padding: 5vh;
+    height: 90vh;
 }
 
 @media screen and (max-width: 768px)
@@ -53,6 +89,7 @@
     #container
     {
         padding: 1vh;
+        height: auto;
     }
 }
 

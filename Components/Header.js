@@ -5,14 +5,13 @@ import { useState } from 'react';
 const Header = (props) => {
   return (
     <>
-    <div id='header-container'>
+    <div className='Header'>
         <div>
-            <div>
+            <div className='header-right'>
                 {props.name}
             </div>
         </div>
-        <div>
-            <Link href='#'>Home</Link>
+        <div className='header-right'>
             <Link href='https://nikhileshrana.tech'>Portfolio</Link>
             <Link href='https://github.com/nikhileshrana'>Github</Link>
         </div>
