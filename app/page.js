@@ -2,6 +2,7 @@
 import React, { useState } from 'react'
 import Header from "@/Components/Header";
 import Footer from '@/Components/Footer';
+import Container from '@/Components/Container';
 import axios from "axios";
 
 const page = () => {
@@ -31,17 +32,19 @@ const page = () => {
   return (
     <>
       <Header name={Logo} />
-      <div id='container'>
-        <div id='title'>{title}</div>
-        <div>
-          <div>{data}</div>
-          <div><button onClick={mydata}>Click Me</button></div>
-        </div>
-        <div>
-          <div>{output}</div>
-          <div><button onClick={showoutput}>Refresh Answer / View Why?</button></div>
-        </div>
+    
+    <div id='container'>
+      <div>
+        <Container 
+        content_up="About the Project x Nikhilesh Rana"
+        content_down="API to bring humor to users through a React.js/Next.js application. With its sleek design and user-friendly interface, it offers a delightful experience for users seeking a good laugh." url="HEMLO" jokes="jokes"></Container>
       </div>
+      <div>
+        <Container content_up="In need of a good chuckle?" content_down="Look no further! Explore an array of hilarious jokes with just a click of a button. Whether you're in need of a pick-me-up or just want to share a laugh with friends, this section has got you covered." data={data} mydata={mydata} output={output} showoutput={showoutput}></Container>
+      </div>
+    </div>
+
+
       <Footer />
     </>
   );

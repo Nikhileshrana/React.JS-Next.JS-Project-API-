@@ -1,134 +1,90 @@
 *
 {
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    margin: 0px;
 }
 
-body
+.Container
 {
-    height: 100vh;
-}
-
-#header-container
-{
-    background-color: #000000;
-    color: #ffffff;
-    padding: 10px;
-    text-align: center;
-    width: 100%;
+    width:fit-content;
+    margin: 0 auto;
     display: flex;
-    justify-content: space-between;
-    height: 5vh;
+    flex-direction: column;
+    gap: 5vh;
+    background-image: url(https://assets-global.website-files.com/61890776ba7dcde3edb6b62b/62e185448da6d0f9d7555b60_assets-2.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: rgb(0, 0, 0);
+    border-radius: 20px;
+    max-width: 90%;
+    min-height: 70vh;
 }
 
-#header-container>div
+.Container-up
 {
-    display: flex;
-    justify-content: space-between;
-    gap: 4vw;
+    font-size: xx-large;
+    padding: 1vh;
 }
 
-#header-container>div>div
+.Container-down
 {
-    display: flex;
-    justify-content: space-around;
-}
-
-footer
-{
-    height: 3vh;
+    font-size: medium;
+    padding: 3vh;
 }
 
 #container
 {
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    height: 92vh;
-    background-image: url(https://d2pas86kykpvmq.cloudfront.net/landings/inflatable/worm.png);
+    gap: 3vh;
+    margin: 0 auto;
+    padding: 5vh;
+}
+
+@media screen and (max-width: 768px)
+{
+    #container
+    {
+        gap: 10vh;
+        flex-direction: column;
+    }
+
+    #container
+    {
+        padding: 1vh;
+    }
+}
+
+#HEMLO
+{
+
+    background-image: url(https://assets-global.website-files.com/61890776ba7dcde3edb6b62b/64d780dcd8b2c979aab80b0b_custom-bg.svg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position:initial;
 }
 
-#container>div , #container>div>div
+#jokes
 {
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    justify-content: space-around;
-    gap: 4vw;
-}
-
-#container>div>div
-{
-    font-size:x-large ;
-}
-
-#title
-{
-    font-size: xx-large;
-    font-weight: 600;
-    background: linear-gradient(to right, #f32170, #ff6b08,#cf23cf, #eedd44);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    border-radius: 10px;
-    animation-name: move;
-    animation-duration: 3s;
-    animation-fill-mode: forwards;
-    animation-iteration-count: infinite;
-}
-
-@keyframes move
-{
-    0%
-    {
-        transform: translateY(0%);
-    }
-    50%
-    {
-        transform: translateY(-10%);
-    }
-    100%
-    {
-        transform: translateY(0%);
-    }
+    display: none;
 }
 
 button
 {
-    background-color: #423187;
-    color: #fff;
-    padding: 10px;
-    border-radius: 10px;
-    border: none;
-    cursor: pointer;
-    font-size: large;
+    border-radius: 8px;
+    padding: 1.5vh;
+    background-color:rgba(18, 82, 178, 0.247);
+    border: 1px solid rgb(157, 157, 255);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    font-weight: 600;
+    transition: ease-in-out 0.5s;
+    color: rgb(255, 255, 255);
 }
 
 button:hover
 {
-    background-color: #f7f7f7;
-    color: #423187;
-    animation-name: swipe;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-    animation-duration: 1s;
-}
-
-@keyframes swipe
-{
-    0%
-    {
-        transform: translateX(0%);
-    }
-    50%
-    {
-        transform: translateX(10px);
-    }
-    100%
-    {
-        transform: translateX(0%);
-    }
+    background-color: rgba(8, 36, 78, 0.5);
+    color: rgb(255, 230, 68);
+    transition: ease-in-out 0.5s;
 }
